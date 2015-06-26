@@ -1,6 +1,9 @@
 <div class="contact-list">
   <h2>All your peeps</h2>
 
+  {{#link-to 'contacts.new' tagName='button'}}
+    NEW
+  {{/link-to}}
   {{contact-list contacts=model}}
 </div>
 

@@ -11,7 +11,7 @@ export default Ember.Component.extend({
       const queryRegex = new RegExp(query, 'i');
 
       return this.get('contacts').filter(function(contact) {
-        return contact.get('nameFirst'). match(queryRegex);
+        return contact.get('fullName'). match(queryRegex);
       });
     }
   )
