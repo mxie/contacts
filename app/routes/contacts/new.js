@@ -14,7 +14,7 @@ export default Ember.Route.extend({
   }),
 
   actions: {
-    submit: function() {
+    create: function() {
       const contact = this.get('currentModel');
 
       contact.save().then(savedContact => {

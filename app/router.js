@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('contacts', { path: '/' }, function() {
     this.route('contact', { path: '/contacts/:contact_id' });
     this.route('new', { path: '/contacts/new' });
+    this.route('edit', { path: '/contacts/:contact_id/edit' });
   });
 });
 

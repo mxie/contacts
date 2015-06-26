@@ -1,20 +1,5 @@
 <h2>Create a Contact</h2>
 
-<form {{action "submit" on="submit"}}>
-  <label>First Name</label>
-  {{input value=model.nameFirst}}
-
-  <label>Last Name</label>
-  {{input value=model.nameLast}}
-
-  <label>Email</label>
-  {{input value=model.email}}
-
-  <label>Twitter</label>
-  {{input value=model.twitter}}
-
-  <input type="submit" value="Submit">
-  <button {{action 'cancel'}}>Cancel</button>
-</form>
+{{contact-form contact=model submit="create" cancel="cancel"}}
 
 {{outlet}}
