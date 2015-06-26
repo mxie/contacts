@@ -17,8 +17,9 @@ export default Ember.Route.extend({
     submit: function() {
       const contact = this.get('currentModel');
 
-      contact.save();
-      this.transitionTo('contacts');
+      contact.save().then(savedContact => {
+        this.transitionTo('contacts.contact', savedContact);
+      });
     },
 
     cancel: function() {
