@@ -1,11 +1,5 @@
 <h2>All your peeps</h2>
 
-<ul>
-  {{#each model as |contact|}}
-    <li>
-      {{contact.fullName}}
-    </li>
-  {{/each}}
-</ul>
+{{contact-list contacts=model}}
 
 {{outlet}}
